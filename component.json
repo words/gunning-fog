@@ -1,0 +1,18 @@
+{
+  "name": "gunning-fog",
+  "version": "0.0.1",
+  "description": "Formula to detect the ease of reading a text according to the Gunning fog index (1952)",
+  "license": "MIT",
+  "keywords": [
+    "robert",
+    "gunning",
+    "fog",
+    "readability",
+    "index",
+    "formula"
+  ],
+  "scripts": [
+    "index.js"
+  ],
+  "repository": "wooorm/gunning-fog"
+}
