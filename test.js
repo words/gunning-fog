@@ -4,7 +4,7 @@
  * Module dependencies (gunningFog, assert).
  */
 
-var gunningFog = require('..'),
+var gunningFog = require('./'),
     assert = require('assert');
 
 /**
