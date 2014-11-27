@@ -1,11 +1,14 @@
 'use strict';
 
 /**
- * The constants as defined by the Gunning fog index.
+ * Constants.
  */
 
-var COMPLEX_WORD_WEIGHT = 100,
-    WEIGHT = 0.4;
+var COMPLEX_WORD_WEIGHT,
+    WEIGHT;
+
+COMPLEX_WORD_WEIGHT = 100;
+WEIGHT = 0.4;
 
 /**
  * Get the grade level of a given value according to the Gunning Fog
