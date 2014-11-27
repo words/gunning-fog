@@ -11,8 +11,8 @@
     "index",
     "formula"
   ],
+  "repository": "wooorm/gunning-fog",
   "scripts": [
     "index.js"
-  ],
-  "repository": "wooorm/gunning-fog"
+  ]
 }
