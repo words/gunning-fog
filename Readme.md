@@ -1,4 +1,4 @@
-# gunning-fog [![Build Status](https://travis-ci.org/wooorm/gunning-fog.svg?branch=master)](https://travis-ci.org/wooorm/gunning-fog) [![Coverage Status](https://img.shields.io/coveralls/wooorm/gunning-fog.svg)](https://coveralls.io/r/wooorm/gunning-fog?branch=master)
+# gunning-fog [![Build Status](https://img.shields.io/travis/wooorm/gunning-fog.svg?style=flat)](https://travis-ci.org/wooorm/gunning-fog) [![Coverage Status](https://img.shields.io/coveralls/wooorm/gunning-fog.svg?style=flat)](https://coveralls.io/r/wooorm/gunning-fog?branch=master)
 
 Formula to detect the ease of reading a text according to the [Gunning fog index](http://en.wikipedia.org/wiki/Gunning_fog_index).
 
