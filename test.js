@@ -1,14 +1,17 @@
 'use strict';
 
 /**
- * Module dependencies (gunningFog, assert).
+ * Dependencies.
  */
 
-var gunningFog = require('./'),
-    assert = require('assert');
+var gunningFog,
+    assert;
+
+gunningFog = require('./');
+assert = require('assert');
 
 /**
- * Assert, but up to 6 digits.
+ * Utilities.
  */
 
 function roundAssert(a, b) {
@@ -16,7 +19,7 @@ function roundAssert(a, b) {
 }
 
 /**
- * Unit tests.
+ * Tests.
  */
 
 describe('gunningFog()', function () {
