@@ -40,8 +40,8 @@ describe('gunningFog()', function () {
          */
 
         roundAssert(gunningFog({
-            'sentence' : 1,
-            'word' : 13
+            'sentence': 1,
+            'word': 13
         }), 5.2);
 
         /**
@@ -54,9 +54,9 @@ describe('gunningFog()', function () {
          */
 
         roundAssert(gunningFog({
-            'sentence' : 1,
-            'word' : 13,
-            'complexPolysillabicWord' : 2
+            'sentence': 1,
+            'word': 13,
+            'complexPolysillabicWord': 2
         }), 11.353846);
     });
 });
