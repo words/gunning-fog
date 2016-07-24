@@ -1,65 +1,42 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2014 Titus Wormer
+ * @license MIT
+ * @module gunning-fog
+ * @fileoverview Test suite for `gunning-fog`.
+ */
+
 'use strict';
 
-/**
- * Dependencies.
- */
+/* Dependencies. */
+var test = require('tape');
+var nan = require('is-nan');
+var gunningFog = require('./');
 
-var gunningFog,
-    assert;
+/* Formula. */
+test('gunningFog', function (t) {
+  t.ok(nan(gunningFog()), 'NaN when an invalid value is given');
 
-gunningFog = require('./');
-assert = require('assert');
+  t.equal(
+    round(gunningFog({
+      sentence: 1,
+      word: 13
+    })),
+    5.2
+  );
 
-/**
- * Utilities.
- */
+  t.equal(
+    round(gunningFog({
+      sentence: 1,
+      word: 13,
+      complexPolysillabicWord: 2
+    })),
+    11.353846
+  );
 
-function roundAssert(a, b) {
-    assert(Math.round(a * 1000000) === Math.round(b * 1000000));
-}
-
-/**
- * Tests.
- */
-
-describe('gunningFog()', function () {
-    it('should be of type `function`', function () {
-        assert(typeof gunningFog === 'function');
-    });
-
-    it('should work', function () {
-        var result;
-
-        /**
-         * Return NaN when an invalid value is given.
-         */
-
-        result = gunningFog();
-
-        assert(result !== result);
-
-        /**
-         * For a sentence without complex polysillabic words.
-         */
-
-        roundAssert(gunningFog({
-            'sentence': 1,
-            'word': 13
-        }), 5.2);
-
-        /**
-         * For “The Australian platypus is seemingly a hybrid of
-         * a mammal and reptilian creature.”
-         *
-         * Sentences: 1
-         * Words: 13
-         * Complex Polysillabic: 2 (seemingly, reptilian)
-         */
-
-        roundAssert(gunningFog({
-            'sentence': 1,
-            'word': 13,
-            'complexPolysillabicWord': 2
-        }), 11.353846);
-    });
+  t.end();
 });
+
+function round(val) {
+  return Math.round(val * 1e6) / 1e6;
+}

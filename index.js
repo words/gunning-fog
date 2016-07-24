@@ -1,44 +1,46 @@
-'use strict';
-
 /**
- * Constants.
+ * @author Titus Wormer
+ * @copyright 2014 Titus Wormer
+ * @license MIT
+ * @module gunning-fog
+ * @fileoverview Detect ease of reading according to the
+ *   the Gunning fog index (1952).
  */
 
-var COMPLEX_WORD_WEIGHT,
-    WEIGHT;
+'use strict';
 
-COMPLEX_WORD_WEIGHT = 100;
-WEIGHT = 0.4;
+/* Expose. */
+module.exports = exports = gunningFog;
+
+/* The constants. */
+var COMPLEX_WORD_WEIGHT = 100;
+var WEIGHT = 0.4;
 
 /**
- * Get the grade level of a given value according to the Gunning Fog
- * Index. More information is available at WikiPedia:
+ * Get the grade level of a given value according to
+ * the Gunning Fog Index.  More information is available
+ * at WikiPedia:
  *
  *   http://en.wikipedia.org/wiki/Gunning_fog_index
  *
  * @param {Object} counts
  * @param {number} counts.word - Number of words.
  * @param {number} counts.sentence - Number of sentences.
- * @param {number} counts.complexPolysillabicWord - Number of complex
- *   (exlcuding jargon, proper nouns, compound words) polysillabic words
- *   (three or more syllables).
+ * @param {number} counts.complexPolysillabicWord - Number
+ *   of complex (exlcuding jargon, proper nouns, compound words)
+ *   polysillabic words (three or more syllables).
  * @return {number}
  */
-
 function gunningFog(counts) {
-    if (!counts || !counts.sentence || !counts.word) {
-        return NaN;
-    }
+  if (!counts || !counts.sentence || !counts.word) {
+    return NaN;
+  }
 
-    return WEIGHT * (
-        (counts.word / counts.sentence) +
-        COMPLEX_WORD_WEIGHT *
-        ((counts.complexPolysillabicWord || 0) / counts.word)
-    );
+  return WEIGHT * (
+    (counts.word / counts.sentence) +
+    (
+      COMPLEX_WORD_WEIGHT *
+      ((counts.complexPolysillabicWord || 0) /
+      counts.word))
+  );
 }
-
-/**
- * Export `gunningFog`.
- */
-
-module.exports = gunningFog;
