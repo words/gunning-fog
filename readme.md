@@ -20,8 +20,8 @@ var gunningFog = require('gunning-fog');
 
 /* For “The Australian platypus is seemingly a hybrid of
  * a mammal and reptilian creature.” (1 sentence; 13 words;
- * 26 syllables; 4 polysillabic words, 2 of which jargon/proper
- * nouns). */
+ * 4 polysillabic words, of which two are jargon, proper nouns,
+ * or compound words). */
 gunningFog({
   sentence: 1,
   word: 13,
@@ -36,7 +36,7 @@ gunningFog({
 
 Given an object containing the number of words (`word`), the
 number of sentences (`sentence`), and the number of complex
-(exlcuding jargon, proper nouns, compound words) polysillabic
+(excluding jargon, proper nouns, compound words) polysillabic
 (three or more syllables) words (`complexPolysillabicWord`)
 in a document, returns the grade level associated with the
 document.
