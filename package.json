@@ -17,6 +17,9 @@
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "files": [
+    "index.js"
+  ],
   "dependencies": {},
   "devDependencies": {
     "browserify": "^13.0.1",
