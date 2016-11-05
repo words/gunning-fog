@@ -2,7 +2,6 @@
 *.log
 .nyc_output/
 coverage/
-data/
 node_modules/
 gunning-fog.js
 gunning-fog.min.js
