@@ -1,12 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2014 Titus Wormer
- * @license MIT
- * @module gunning-fog
- * @fileoverview Detect ease of reading according to the
- *   the Gunning fog index (1952).
- */
-
 'use strict';
 
 /* Expose. */
