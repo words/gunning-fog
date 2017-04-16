@@ -1,7 +1,7 @@
 'use strict';
 
 /* Expose. */
-module.exports = exports = gunningFog;
+module.exports = gunningFog;
 
 /* The constants. */
 var COMPLEX_WORD_WEIGHT = 100;
