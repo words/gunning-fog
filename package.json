@@ -1,6 +1,6 @@
 {
   "name": "gunning-fog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Formula to detect the ease of reading a text according to the Gunning fog index (1952)",
   "license": "MIT",
   "keywords": [
