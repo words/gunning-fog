@@ -43,6 +43,8 @@ document.
 
 ## Related
 
+*   [`retext-readability`](https://github.com/wooorm/retext-readability)
+    — Complete readability measuring solution
 *   [`automated-readability`](https://github.com/wooorm/automated-readability)
     — Uses character count instead of error-prone syllable parser
 *   [`coleman-liau`](https://github.com/wooorm/coleman-liau)
