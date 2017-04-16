@@ -44,19 +44,19 @@ document.
 ## Related
 
 *   [`automated-readability`](https://github.com/wooorm/automated-readability)
-    — Uses character count instead of error-prone syllable parser;
+    — Uses character count instead of error-prone syllable parser
 *   [`coleman-liau`](https://github.com/wooorm/coleman-liau)
-    — Uses letter count instead of an error-prone syllable parser;
+    — Uses letter count instead of an error-prone syllable parser
 *   [dale-chall-formula](https://github.com/wooorm/dale-chall-formula)
-    — Uses a dictionary; suited for higher reading levels;
+    — Uses a dictionary; suited for higher reading levels
 *   [`flesch`](https://github.com/wooorm/flesch)
-    — Uses syllable count;
+    — Uses syllable count
 *   [flesch-kincaid](https://github.com/wooorm/flesch-kincaid)
-    — Like **flesch**; returns U.S. grade levels;
+    — Like **flesch**; returns U.S. grade levels
 *   [`smog-formula`](https://github.com/wooorm/smog-formula)
-    — Like `gunning-fog-index`; without needing advanced NLP;
+    — Like `gunning-fog-index`; without needing advanced NLP
 *   [`spache-formula`](https://github.com/wooorm/spache-formula)
-    — Uses a dictionary; suited for lower reading levels.
+    — Uses a dictionary; suited for lower reading levels
 
 ## License
 
