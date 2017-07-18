@@ -7,7 +7,7 @@ See [syllable][] for detecting syllables.
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install gunning-fog
@@ -26,8 +26,7 @@ gunningFog({
   sentence: 1,
   word: 13,
   complexPolysillabicWord: 2
-});
-// 11.353846...
+}); //=> 11.353846...
 ```
 
 ## API
@@ -74,7 +73,7 @@ document.
 
 [codecov]: https://codecov.io/github/wooorm/gunning-fog
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 
