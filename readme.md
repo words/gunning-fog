@@ -65,13 +65,13 @@ document.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/gunning-fog.svg
+[travis-badge]: https://img.shields.io/travis/words/gunning-fog.svg
 
-[travis]: https://travis-ci.org/wooorm/gunning-fog
+[travis]: https://travis-ci.org/words/gunning-fog
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/gunning-fog.svg
+[codecov-badge]: https://img.shields.io/codecov/c/github/words/gunning-fog.svg
 
-[codecov]: https://codecov.io/github/wooorm/gunning-fog
+[codecov]: https://codecov.io/github/words/gunning-fog
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -81,4 +81,4 @@ document.
 
 [formula]: http://en.wikipedia.org/wiki/Gunning_fog_index
 
-[syllable]: https://github.com/wooorm/syllable
+[syllable]: https://github.com/words/syllable

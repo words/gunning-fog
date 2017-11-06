@@ -11,8 +11,8 @@
     "index",
     "formula"
   ],
-  "repository": "wooorm/gunning-fog",
-  "bugs": "https://github.com/wooorm/gunning-fog/issues",
+  "repository": "words/gunning-fog",
+  "bugs": "https://github.com/words/gunning-fog/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
