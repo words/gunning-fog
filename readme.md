@@ -16,17 +16,14 @@ npm install gunning-fog
 ## Usage
 
 ```js
-var gunningFog = require('gunning-fog');
+var gunningFog = require('gunning-fog')
 
-/* For “The Australian platypus is seemingly a hybrid of
- * a mammal and reptilian creature.” (1 sentence; 13 words;
- * 4 polysillabic words, of which two are jargon, proper nouns,
- * or compound words). */
-gunningFog({
-  sentence: 1,
-  word: 13,
-  complexPolysillabicWord: 2
-}); //=> 11.353846...
+// For “The Australian platypus is seemingly a hybrid of a mammal and reptilian
+// creature.”
+// 1 sentence; 13 words; 4 polysillabic words, of which two are jargon, proper
+// nouns, or compound words.
+gunningFog({sentence: 1, word: 13, complexPolysillabicWord: 2})
+// => 11.353846...
 ```
 
 ## API

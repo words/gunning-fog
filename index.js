@@ -1,20 +1,18 @@
-'use strict';
+'use strict'
 
-module.exports = gunningFog;
+module.exports = gunningFog
 
-var COMPLEX_WORD_WEIGHT = 100;
-var WEIGHT = 0.4;
+var complexWordWeight = 100
+var weight = 0.4
 
 function gunningFog(counts) {
   if (!counts || !counts.sentence || !counts.word) {
-    return NaN;
+    return NaN
   }
 
-  return WEIGHT * (
-    (counts.word / counts.sentence) +
-    (
-      COMPLEX_WORD_WEIGHT *
-      ((counts.complexPolysillabicWord || 0) /
-      counts.word))
-  );
+  return (
+    weight *
+    (counts.word / counts.sentence +
+      complexWordWeight * ((counts.complexPolysillabicWord || 0) / counts.word))
+  )
 }
