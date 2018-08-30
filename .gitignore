@@ -5,3 +5,4 @@ coverage/
 node_modules/
 gunning-fog.js
 gunning-fog.min.js
+yarn.lock
