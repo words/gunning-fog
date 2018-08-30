@@ -5,20 +5,13 @@ node_js:
 - '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: Ri3pFEI2xb+KFiay5klfO+OABHEIjIWfq4wTwAEU0yFUPB4DfspqEYez78vrw/tNgToWkIWrxqj5AfwjXtOC/dAthT+1QRB5rK83OCHHzZQaEXMdNYwh4GNoDqkVvbjJQzP8st9122u8cJ+/DQSXW3uJNt7yWzVdLVSxDU1a8RI=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: MU+N+nBKYJbaIU0aaXOpuOtfa9sOidCLn9Pl62LwQphqNj1jSk3m1kiyi/bG7n5O0DentPnyy79YJ6RX6C4/xxZv6sAnIi+qfszuJ52bQwIns/Jp5k+BgmDZ1ski39az2RH0CQm13TtBbuwoMYwE3WgIFo09TnKrpx0MhDrsGZY=
-    file:
-      - "gunning-fog.js"
-      - "gunning-fog.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: MU+N+nBKYJbaIU0aaXOpuOtfa9sOidCLn9Pl62LwQphqNj1jSk3m1kiyi/bG7n5O0DentPnyy79YJ6RX6C4/xxZv6sAnIi+qfszuJ52bQwIns/Jp5k+BgmDZ1ski39az2RH0CQm13TtBbuwoMYwE3WgIFo09TnKrpx0MhDrsGZY=
+  file:
+    - "gunning-fog.js"
+    - "gunning-fog.min.js"
+  on:
+    tags: true
+    node: '9.0'
