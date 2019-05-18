@@ -1,8 +1,8 @@
 language: node_js
 sudo: false
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
@@ -10,7 +10,7 @@ deploy:
   api_key:
     secure: MU+N+nBKYJbaIU0aaXOpuOtfa9sOidCLn9Pl62LwQphqNj1jSk3m1kiyi/bG7n5O0DentPnyy79YJ6RX6C4/xxZv6sAnIi+qfszuJ52bQwIns/Jp5k+BgmDZ1ski39az2RH0CQm13TtBbuwoMYwE3WgIFo09TnKrpx0MhDrsGZY=
   file:
-    - "gunning-fog.js"
-    - "gunning-fog.min.js"
+    - 'gunning-fog.js'
+    - 'gunning-fog.min.js'
   on:
     tags: true
