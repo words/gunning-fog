@@ -1,4 +1,9 @@
-# gunning-fog [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# gunning-fog
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Formula to detect the grade level of text according to the
 [Gunning fog index][formula].
@@ -62,13 +67,21 @@ document.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/words/gunning-fog.svg
+[build-badge]: https://img.shields.io/travis/words/gunning-fog.svg
 
-[travis]: https://travis-ci.org/words/gunning-fog
+[build]: https://travis-ci.org/words/gunning-fog
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/words/gunning-fog.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/words/gunning-fog.svg
 
-[codecov]: https://codecov.io/github/words/gunning-fog
+[coverage]: https://codecov.io/github/words/gunning-fog
+
+[downloads-badge]: https://img.shields.io/npm/dm/gunning-fog.svg
+
+[downloads]: https://www.npmjs.com/package/gunning-fog
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/gunning-fog.svg
+
+[size]: https://bundlephobia.com/result?p=gunning-fog
 
 [npm]: https://docs.npmjs.com/cli/install
 
