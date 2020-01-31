@@ -5,20 +5,20 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Formula to detect the grade level of text according to the
-[Gunning fog index][formula].
+Formula to detect the grade level of text according to the [gunning fog
+index][formula].
 
-See [syllable][] for detecting syllables.
+See [`syllable`][syllable] for detecting syllables.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install gunning-fog
 ```
 
-## Usage
+## Use
 
 ```js
 var gunningFog = require('gunning-fog')
@@ -35,12 +35,11 @@ gunningFog({sentence: 1, word: 13, complexPolysillabicWord: 2})
 
 ### `gunningFog(counts)`
 
-Given an object containing the number of words (`word`), the
-number of sentences (`sentence`), and the number of complex
-(excluding jargon, proper nouns, compound words) polysillabic
-(three or more syllables) words (`complexPolysillabicWord`)
-in a document, returns the grade level associated with the
-document.
+Given an object containing the number of words (`word`), the number of sentences
+(`sentence`), and the number of complex (excluding jargon, proper nouns,
+compound words) polysillabic (three or more syllables) words
+(`complexPolysillabicWord`) in a document, returns the grade level associated
+with the document.
 
 ## Related
 
