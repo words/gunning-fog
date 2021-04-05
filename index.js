@@ -7,7 +7,7 @@ var weight = 0.4
 
 function gunningFog(counts) {
   if (!counts || !counts.sentence || !counts.word) {
-    return NaN
+    return Number.NaN
   }
 
   return (
