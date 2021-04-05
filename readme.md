@@ -66,9 +66,9 @@ with the document.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/words/gunning-fog.svg
+[build-badge]: https://github.com/words/gunning-fog/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/words/gunning-fog
+[build]: https://github.com/words/gunning-fog/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/words/gunning-fog.svg
 
