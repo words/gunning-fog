@@ -1,11 +1,7 @@
-'use strict'
-
-module.exports = gunningFog
-
 var complexWordWeight = 100
 var weight = 0.4
 
-function gunningFog(counts) {
+export function gunningFog(counts) {
   if (!counts || !counts.sentence || !counts.word) {
     return Number.NaN
   }

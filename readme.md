@@ -12,6 +12,9 @@ See [`syllable`][syllable] for detecting syllables.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -21,7 +24,7 @@ npm install gunning-fog
 ## Use
 
 ```js
-var gunningFog = require('gunning-fog')
+import {gunningFog} from 'gunning-fog'
 
 // For “The Australian platypus is seemingly a hybrid of a mammal and reptilian
 // creature.”
@@ -32,6 +35,9 @@ gunningFog({sentence: 1, word: 13, complexPolysillabicWord: 2})
 ```
 
 ## API
+
+This package exports the following identifiers: `gunningFog`.
+There is no default export.
 
 ### `gunningFog(counts)`
 

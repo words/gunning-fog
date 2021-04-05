@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var gunningFog = require('.')
+import test from 'tape'
+import {gunningFog} from './index.js'
 
 test('gunningFog', function (t) {
   t.ok(Number.isNaN(gunningFog()), 'NaN when an invalid value is given')
