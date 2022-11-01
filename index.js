@@ -1,5 +1,5 @@
-var complexWordWeight = 100
-var weight = 0.4
+const complexWordWeight = 100
+const weight = 0.4
 
 /**
  * @typedef {Object.<string, number>} GunningFogCounts

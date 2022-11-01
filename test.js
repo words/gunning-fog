@@ -9,7 +9,7 @@ test('gunningFog', function (t) {
 
   t.equal(
     round(gunningFog({sentence: 1, word: 13, complexPolysillabicWord: 2})),
-    11.353846
+    11.353_846
   )
 
   t.end()
