@@ -42,8 +42,8 @@ There is no default export.
 ### `gunningFog(counts)`
 
 Given an object containing the number of words (`word`), the number of sentences
-(`sentence`), and the number of complex (excluding jargon, proper nouns,
-compound words) polysillabic (three or more syllables) words
+(`sentence`), and the number of complex (i.e., jargon, proper nouns, compound
+words) polysillabic (three or more syllables) words
 (`complexPolysillabicWord`) in a document, returns the grade level associated
 with the document.
 
